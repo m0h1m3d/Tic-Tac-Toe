@@ -154,7 +154,7 @@ const game = (() => {
       return acc;
     },[]);
 
-      let randomIndex = Math.floor(Math.random()*validMove.length);
+      let randomIndex = Math.floor(Math.random()*validMoves.length);
       let move = validMoves[randomIndex];
       return move;
   };
@@ -165,7 +165,7 @@ const game = (() => {
     player.moves.push(move);
       
         
-    console.clear();
+    // console.clear();
     
     board.display = `${board.positions[0]}     |     ${board.positions[1]}     |     ${board.positions[2]}\n------------------------\n${board.positions[3]}     |    ${board.positions[4]}      |     ${board.positions[5]}\n------------------------\n${board.positions[6]}     |     ${board.positions[7]}     |     ${board.positions[8]}`;
 
