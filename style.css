@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'mark';
+    src: url('/fonts/MadimiOne-Regular.ttf');
+}
+
 body{
     height: 100vh;
     display: flex;
@@ -12,8 +17,8 @@ body{
     background-color: #1C2C35;
 }
 
-.pick{
-    height: 50%;
+.pick-container{
+    height: 70%;
     width: 50%;
     background-color: lightblue;
     display: flex;
@@ -23,9 +28,14 @@ body{
     border-radius: 10px;
     transition: all 0.5s;
     opacity: 1;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.btns-pick{
+.pick-container h1{
+    transition: all 0.3s;
+}
+
+.btns-pick-op{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -40,6 +50,7 @@ body{
     border: transparent;
     cursor: pointer;
     transition: all 0.3s;
+    font-weight: 700;
 }
 
 .cpu{
@@ -54,7 +65,7 @@ body{
 
 .board{
     width: 50%;
-    height: 60%;
+    height: 70%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     padding: 1rem;
@@ -62,6 +73,66 @@ body{
     overflow: hidden;
     transition: all 0.5s;
     opacity: 1;
+}
+
+.board  button{
+    height: 8rem;
+    font-family: 'mark',sans-serif;
+    font-size: 4rem;
+    border: transparent;
+    border-radius: 10px;
+    transition-property: opacity, transform, background;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.btns-pick-mark{
+    height: 30%;
+    width: 99%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #1C2C35;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.mark-x, .mark-o{
+    height: 90%;
+    width: 40%;
+    background-color: inherit;
+    border: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: 'mark',sans-serif;
+    font-weight: 800;
+    font-size: 5rem;
+}
+
+.mark-x{
+    color: #f7b844;
+}
+
+.mark-o{
+    color: #33B9B9;
+}
+
+.mark-x:hover, .mark-o:hover{
+    background: #38505e;
+}
+
+.highlight{
+    background: #38505e;
+}
+
+.winning-cell{
+    background-color: lightgreen;
+    transform: scale(1.03);
+}
+
+.invalid{
+    background: rgb(211, 69, 69);
 }
 
 .hidden{
