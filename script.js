@@ -165,7 +165,7 @@ const game = (() => {
     player.moves.push(move);
       
         
-    // console.clear();
+    console.clear();
     
     board.display = `${board.positions[0]}     |     ${board.positions[1]}     |     ${board.positions[2]}\n------------------------\n${board.positions[3]}     |    ${board.positions[4]}      |     ${board.positions[5]}\n------------------------\n${board.positions[6]}     |     ${board.positions[7]}     |     ${board.positions[8]}`;
 
@@ -362,22 +362,21 @@ const domDisplay= (()=>{
   function renderMark(el, player){
     if(player.name === 'CPU'){
       setTimeout(()=>{
-        el.style.color = player.color;
-        el.textContent = player.sign;
-       el.style.transform = 'scale(1.05)';
-       setTimeout(()=>{
-          el.style.transform = '';
-        },200);
+        render(el,player);
       },500)
     }else{
-      el.style.color = player.color;
-      el.textContent = player.sign;
-      el.style.transform = 'scale(1.05)';
-      setTimeout(()=>{
-        el.style.transform = '';
-      },200);
+      render(el,player);
     }
   };
+
+  function render(el, player){
+    el.style.color = player.color;
+    el.textContent = player.sign;
+    el.style.transform = 'scale(1.05)';
+    setTimeout(()=>{
+     el.style.transform = '';
+    },200);
+  }
   
   function renderInvalid(el){
    el.classList.add('invalid');
