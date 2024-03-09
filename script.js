@@ -191,7 +191,7 @@ const game = (() => {
       console.log(
         `${playerOne.name}:${playerOne.roundWins}\n${nextPlayer.name}:${
           nextPlayer.roundWins
-        }\n ${player.roundWins < 3 ? 'next rounds begins!' : 'Game over'}`
+        }\n ${player.roundWins < 3 ? 'next round begins!' : 'Game over'}`
       );
 
       domDisplay.resetCells();
@@ -245,6 +245,7 @@ const game = (() => {
 const domDisplay= (()=>{
   const cpuBtn = document.querySelector('.cpu');
   const pLayerTwoBtn = document.querySelector('.user');
+  const gameContainer = document.querySelector('.game-container');
   const boardEl = document.querySelector('.board');
   const boardcells = boardEl.querySelectorAll('button');
   const pick = document.querySelector('.pick-container');
@@ -265,7 +266,7 @@ const domDisplay= (()=>{
           return;
         };
   
-        hide([pick,btnsPickOp,btnMarkX,btnMarkO,boardEl]);      
+        hide([pick,btnsPickOp,btnMarkX,btnMarkO,gameContainer]);      
   
       }else if(e.target.className.includes('mark-x')){
   
