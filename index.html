@@ -21,16 +21,43 @@
         <button class="cpu">CPU</button>
       </div>
     </div>
-    <div class="board hidden">
-      <button data-position="0"></button>
-      <button data-position="1"></button>
-      <button data-position="2"></button>
-      <button data-position="3"></button>
-      <button data-position="4"></button>
-      <button data-position="5"></button>
-      <button data-position="6"></button>
-      <button data-position="7"></button>
-      <button data-position="8"></button>
-    </div>
+    <div class="game-container hidden">
+      <div class="turns">
+        <div class="rounds">
+          <p>Round: <span>1</span></p>
+        </div>
+        <div class="turn">
+          <p><span>X</span> turn</p>
+        </div>
+        <div class="restart">
+          <button><img src="/icons/restart_alt_FILL0_wght400_GRAD0_opsz24.png"></button>
+        </div>
+      </div>
+      <div class="board">
+        <button data-position="0"></button>
+        <button data-position="1"></button>
+        <button data-position="2"></button>
+        <button data-position="3"></button>
+        <button data-position="4"></button>
+        <button data-position="5"></button>
+        <button data-position="6"></button>
+        <button data-position="7"></button>
+        <button data-position="8"></button>
+      </div>
+      <div class="stats">
+        <div class="player-score">
+          <p>Player One</p>
+          <p class="num">3</p>
+        </div>
+        <div class="tie">
+          <p>Ties</p>
+          <p class="num">2</p>
+        </div>
+        <div class="opponent-score">
+          <p>Player Two</p>
+          <p class="num">3</p>
+        </div>
+      </div>
+    </div>    
   </body>
 </html>
