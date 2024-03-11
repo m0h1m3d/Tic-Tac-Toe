@@ -24,13 +24,13 @@
     <div class="game-container hidden">
       <div class="turns">
         <div class="rounds">
-          <p>Round: <span>1</span></p>
+          <p>Round: <span class="round">1</span></p>
         </div>
         <div class="turn">
-          <p><span>X</span> turn</p>
+          <p><span class="current-turn">X</span> turn</p>
         </div>
         <div class="restart">
-          <button><img src="/icons/restart_alt_FILL0_wght400_GRAD0_opsz24.png"></button>
+          <button class="btn-restart"><img src="/icons/restart_alt_FILL0_wght400_GRAD0_opsz24.png"></button>
         </div>
       </div>
       <div class="board">
@@ -46,18 +46,26 @@
       </div>
       <div class="stats">
         <div class="player-score">
-          <p>Player One</p>
-          <p class="num">3</p>
+          <p class="player">Player One</p>
+          <p class="num plScore"></p>
         </div>
         <div class="tie">
           <p>Ties</p>
-          <p class="num">2</p>
+          <p class="num tScore">0</p>
         </div>
         <div class="opponent-score">
-          <p>Player Two</p>
-          <p class="num">3</p>
+          <p class="opponent">Player Two</p>
+          <p class="num opScore"></p>
         </div>
       </div>
-    </div>    
+    </div>   
+    <div class="results hidden">
+      <h1>Game Over</h1>
+      <p><span class="winner"></span>  is the winner!</p>
+      <div class="btns">
+        <button class="restartGame">Restart game</button>
+      <button class="menu">Back to Menu</button>
+      </div>
+    </div> 
   </body>
 </html>
