@@ -1,5 +1,5 @@
 # Tic Tac Toe
-    -this is a tic tac toe game project from the odin project
+-this is a tic tac toe game project from the odin project
 
 ## game menu
 ![](/readme-assets/menu.png)
