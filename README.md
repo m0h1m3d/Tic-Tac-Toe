@@ -5,11 +5,12 @@
 ![](/readme-assets/menu.png)
 
 ## gameplay
-<img src="/readme-assets/game.png" height="50">
-<img src="/readme-assets/gameover.png" height="50">
+![](/readme-assets/game.png)
+![](/readme-assets/gameover.png)
+
 
 ## what i learned
--this is the first project i build using the module pattern and it really is one of the best patterns for organization and private data!
+-this is the first project i build using the module pattern and it really is one of the best patterns for organizing code!
 
 -got a btter understanding of the data attribute and how to use it to associate diffrent task to specific elements
 
