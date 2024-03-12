@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color : transparent;
 }
 
 @font-face {
@@ -44,13 +45,14 @@ body{
 
 .user, .cpu{
     height: 5rem;
-    width: 10rem;
+    width: 40%;
     font-size: 16px;
     border-radius: 10px;
     border: transparent;
     cursor: pointer;
     transition: all 0.3s;
     font-weight: 700;
+    color: #000;
 }
 
 .cpu{
@@ -223,6 +225,7 @@ body{
     align-items: center;
     font-family: 'mark';
     transition: all 0.5s;
+    color: #fff;
 }
 
 .btns{
@@ -241,6 +244,7 @@ body{
     cursor: pointer;
     transition: all 0.5s;
     font-weight: 700;
+    color: #000;
 }
 
 .restartGame{
@@ -271,4 +275,75 @@ body{
     width: 0;
     font-size: 0;
     opacity: 0;
+}
+
+@media (max-width: 460px){
+    body{
+        height: 100vh;
+        padding: 20px;
+    }
+
+    .pick-container{
+        width: 90%;
+    }
+
+    .btns-pick-mark button{
+        font-size: 4rem;
+    }
+
+    .game-container{
+        height: 90vh;
+    }
+    
+    .turns{
+        gap: 20px;
+    }
+
+    .rounds, .turn{
+        width: 28%;
+        height: 25px;
+    }
+    
+    .restart{
+        width: 30%;
+    }
+
+    .board{
+        height: 390px;
+        width: 90%;
+        gap: 10px;
+    }
+
+    .board button{
+        height: 1.5em;
+    }
+
+    .stats{
+        width: 100%;
+        gap: 20px;
+        padding: 5px;
+    }
+
+    .player-score, .tie, .opponent-score{
+        width: 30%;
+        height: 50px;
+    }
+
+    .results{
+        width: 100%;
+        background-color: transparent;
+        color: #fff;
+    }
+
+    .btns{
+        width: 100%;
+    }
+
+    .hidden{
+        height: 0;
+        width: 0;
+        font-size: 0;
+        opacity: 0;
+        visibility: none;
+    }
 }
