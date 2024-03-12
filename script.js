@@ -1,3 +1,4 @@
+console.log('game start!');
 const board = (() => {
   const positions = ['', '', '', '', '', '', '', '', ''];
   let display;
