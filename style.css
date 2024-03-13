@@ -55,12 +55,12 @@ body{
     color: #000;
 }
 
-.cpu{
+.cpu, .menu{
     background-color: #33B9B9;
     box-shadow: 0 5px 0 rgb(25, 56, 56);
 }
 
-.user{
+.user, .restartGame{
     background-color: #f7b844;
     box-shadow: 0 5px 0 rgb(114, 86, 35);
 }
@@ -143,7 +143,6 @@ body{
 }
 
 .player-score{
-    background: #33B9B9;
     background: #e0a73d;
 }
 
@@ -152,9 +151,7 @@ body{
 }
 
 .opponent-score{
-    background: #e0a73d;
-    background: #33B9B9;
-
+    background: #33B9B9
 }
 
 .board{
@@ -245,16 +242,6 @@ body{
     transition: all 0.5s;
     font-weight: 700;
     color: #000;
-}
-
-.restartGame{
-    background: #f7b844;
-    box-shadow: 0 5px 0 rgb(114, 86, 35);
-}
-
-.menu{
-    background: #33b9b9;
-    box-shadow: 0 5px 0 rgb(25, 56, 56);
 }
 
 .highlight{

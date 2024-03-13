@@ -1,4 +1,3 @@
-console.log('game start!');
 const board = (() => {
   const positions = ['', '', '', '', '', '', '', '', ''];
   let display;
@@ -479,7 +478,7 @@ const domDisplay= (()=>{
     winner.style.fontSize = '2rem';
   }
 
-  return { init, clickEffect, resetCells,renderWinningUi,renderInvalid, renderMark,renderTie,renderRounds, switchTurns,setScore, setTie, resetScores, renderGameOver }
+  return { init, resetCells,renderWinningUi,renderInvalid, renderMark,renderTie,renderRounds, switchTurns,setScore, setTie, resetScores, renderGameOver }
 
 })();
 domDisplay.init();
